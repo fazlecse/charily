@@ -48,11 +48,10 @@ Typography
   --body-color: 51, 51, 51;
   --heading-color: 3, 4, 3;
   --black: 0, 0, 0;
-  --Very-light-gray: 250, 250, 250;
+  --very-light-gray: 250, 250, 250;
   --mostly-desaturated-dark-blue: 100, 116, 139;
   --mostly-desaturated-dark-blue2: 104, 115, 172;
   --light-gray: #dddddd;
-  --very-light-gray: 250, 250, 250;
   --white: 255, 255, 255;
   --mostly-black: 20, 31, 25;
   --soft-blue: 193, 191, 253;
@@ -71,7 +70,7 @@ Typography
   --bg-color1: #ffffff;
   --bg-color2: #F6FEFA;
   --bg-color3: #F3FBF7;
-  --bg-color4: #2f3031;
+  --bg-color4: #1C2721;
   --bg-color5: #1d1e1f;
   --border-color1: rgba(40, 189, 105, 0.5);
   --border-color2: #ECEBEB;
@@ -229,7 +228,7 @@ h1 {
 }
 h2 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 42px;
   margin-bottom: 5px;
 }
 
@@ -263,7 +262,7 @@ h4 {
 h5 {
   font-size: 20px;
   margin-bottom: 5px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h6 {
@@ -672,24 +671,24 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .owl-theme .owl-nav {
-  margin-top: 48px;
+  margin-top: 80px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  gap: 10px;
 }
 .owl-theme .owl-nav .owl-prev,
 .owl-theme .owl-nav .owl-next {
   width: 41px;
   height: 41px;
   border-radius: 50% !important;
-  background: rgb(var(--primary-color)) !important;
-  background: var(--bg-color3) !important;
-  background-size: 200% auto !important;
+  border: 1px solid rgb(var(--primary-color)) !important;
   font-size: 16px !important;
   transition: var(--transition);
+  color: rgb(var(--primary-color)) !important;
 }
 .owl-theme .owl-nav .owl-prev:hover,
 .owl-theme .owl-nav .owl-next:hover {
-  background-position: center right !important;
+  background: rgb(var(--primary-color)) !important;
   color: rgb(var(--white)) !important;
 }
 
@@ -5431,7 +5430,7 @@ Bottom Mobile, Tab nav end
 About section start
 ----------------------------------------------*/
 .custom-progress {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .custom-progress .item {
   font-size: 18px;
@@ -5604,9 +5603,178 @@ Feature section end
 .causes-box .custom-progress .progress {
   height: 4px;
 }
+.causes-box .funding-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: rgb(var(--heading-color));
+}
 
 /*----------------------------------------------
 00. Cause Category section end
+----------------------------------------------*/
+/*----------------------------------------------
+00. Donation section section start
+----------------------------------------------*/
+.donation-section {
+  background-color: var(--bg-color2);
+}
+.donation-section .section-header {
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto 80px;
+}
+
+.donation-box {
+  border: 1px solid rgb(var(--primary-color));
+  padding: 24px;
+  border-radius: 20px;
+}
+.donation-box .name-img-box {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: rgb(var(--primary-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(var(--white));
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.donation-box .donation-entry {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.donation-box .donation-entry .donation-time {
+  color: rgb(var(--secondary-color));
+}
+
+/*----------------------------------------------
+Donation section section end
+----------------------------------------------*/
+/*----------------------------------------------
+00. Event section start
+----------------------------------------------*/
+.event-section {
+  background-color: rgb(var(--mostly-black));
+}
+.event-section .section-subtitle {
+  color: rgb(var(--very-light-gray));
+}
+.event-section h2 {
+  color: rgb(var(--white));
+}
+.event-section p {
+  color: rgb(var(--very-light-gray));
+}
+
+.event-box {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.event-box:hover .img-box img {
+  transform: scale(1);
+}
+.event-box .img-box {
+  position: relative;
+}
+.event-box .img-box img {
+  transform: scale(1.03);
+  transition: var(--transition);
+}
+.event-box .img-box .time {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: rgb(var(--white));
+  display: flex;
+  gap: 10px;
+}
+.event-box .text-box {
+  margin-top: 4px;
+  padding: 20px;
+  background-color: var(--bg-color4);
+}
+.event-box .text-box .title {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 700px;
+  color: rgb(var(--white));
+}
+.event-box .meta {
+  justify-content: space-between;
+}
+
+/*----------------------------------------------
+Event section end
+----------------------------------------------*/
+/*----------------------------------------------
+00. Team section start
+----------------------------------------------*/
+.team-section {
+  background-color: var(--bg-color2);
+}
+.team-section .section-header {
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto 80px;
+}
+
+.team-box:hover .img-box .social-container {
+  right: -30px;
+  transform: rotate(14.614deg);
+}
+.team-box .img-box {
+  position: relative;
+  z-index: 0;
+  height: 313px;
+}
+.team-box .img-box img {
+  border-radius: 20px;
+  width: 100%;
+}
+.team-box .img-box .social-container {
+  top: 20px;
+  right: 0;
+  position: absolute;
+  width: 184px;
+  height: 247px;
+  position: absolute;
+  background-color: rgb(var(--primary-color));
+  transform: rotate(0);
+  border-radius: 20px;
+  z-index: -1;
+  transition: var(--transition);
+}
+.team-box .img-box .social-box {
+  flex-direction: column;
+  gap: 10px;
+  transform: rotate(-14.614deg);
+  align-items: end;
+  margin: 25px 10px;
+}
+.team-box .img-box .social-box a {
+  background-color: rgb(var(--white));
+  color: rgb(var(--primary-color));
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  font-size: 14px;
+}
+.team-box .text-box {
+  margin-top: 16px;
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid rgb(var(--primary-color));
+}
+
+/*----------------------------------------------
+Team section end
 ----------------------------------------------*/
 /*----------------------------------------------
 00. Trending movie start
@@ -6170,12 +6338,12 @@ Checkout section end
   -moz-column-gap: 32px;
        column-gap: 32px;
   row-gap: 10px;
-  color: rgb(var(--white));
+  color: rgb(var(--very-light-gray));
 }
 .meta .item {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 12px;
 }
 .meta .icon {
   color: rgb(var(--primary-color));

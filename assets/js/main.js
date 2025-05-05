@@ -15,11 +15,11 @@ if ($("nav").length) {
 
 $(document).ready(function () {
 
-  // product carousel start
-  $(".product-carousel").owlCarousel({
+  // donation carousel start
+  $(".donation-carousel").owlCarousel({
     loop: true,
     // autoplay: true,
-    margin: 20,
+    margin: 30,
     autoplayTimeout: 2000,
     // nav: false,
     // rtl: true,
@@ -52,144 +52,13 @@ $(document).ready(function () {
         dots: false,
       },
       1400: {
-        items: 5,
-        nav: true,
-        dots: false,
-      },
-    },
-  });
-  // product carousel end
-  // product carousel start
-  $(".actor-carousel").owlCarousel({
-    loop: true,
-    // autoplay: true,
-    margin: 30,
-    autoplayTimeout: 2000,
-    // nav: false,
-    // rtl: true,
-    navText: [
-      "<i class='fa-regular fa-angle-left'></i>",
-      "<i class='fa-regular fa-angle-right'></i>",
-    ],
-    // rtl: true,
-    responsive: {
-      0: {
-        items: 2,
-        nav: true,
-        dots: false,
-        dotsEach: 3,
-        margin: 10,
-      },
-      480: {
-        items: 3,
-        nav: true,
-        dots: false,
-        dotsEach: 2,
-      },
-      768: {
-        items: 4,
-        nav: true,
-        dots: false,
-      },
-      992: {
-        items: 5,
-        nav: true,
-        dots: false,
-      },
-      1200: {
-        items: 6,
-        nav: true,
-        dots: false,
-      },
-      1400: {
-        items: 7,
-        nav: true,
-        dots: false,
-      },
-    },
-  });
-  // product carousel end
-  // product carousel start
-  $(".billed-cast").owlCarousel({
-    loop: true,
-    // autoplay: true,
-    margin: 25,
-    autoplayTimeout: 2000,
-    // nav: false,
-    navText: [
-      "<i class='fa-regular fa-angle-left'></i>",
-      "<i class='fa-regular fa-angle-right'></i>",
-    ],
-    // rtl: true,
-    responsive: {
-      0: {
-        items: 2,
-        nav: true,
-        dots: false,
-        dotsEach: 3,
-      },
-      576: {
-        items: 3,
-        nav: true,
-        dots: false,
-        dotsEach: 2,
-      },
-      768: {
-        items: 4,
-        nav: true,
-        dots: false,
-      },
-      992: {
-        items: 2,
-        nav: true,
-        dots: false,
-      },
-      1200: {
-        items: 3,
-        nav: true,
-        dots: false,
-      },
-      1400: {
         items: 4,
         nav: true,
         dots: false,
       },
     },
   });
-  // product carousel end
-  // product carousel start
-  $(".video-poster").owlCarousel({
-    loop: true,
-    // autoplay: true,
-    margin: 25,
-    autoplayTimeout: 2000,
-    // nav: false,
-    navText: [
-      "<i class='fa-regular fa-angle-left'></i>",
-      "<i class='fa-regular fa-angle-right'></i>",
-    ],
-    // rtl: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true,
-        dots: false,
-        dotsEach: 3,
-      },
-      576: {
-        items: 2,
-        nav: true,
-        dots: false,
-        dotsEach: 2,
-      },
-      768: {
-        items: 2,
-        nav: true,
-        dots: false,
-      },
-    },
-  });
-  // product carousel end
+  // donation carousel end
 
   // Hero slider start
   if ($(".hero-slick").length) {
