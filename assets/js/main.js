@@ -14,6 +14,50 @@ if ($("nav").length) {
 }
 
 $(document).ready(function () {
+  // testimonial carousel start
+  $(".testimonial-carousel").owlCarousel({
+    loop: true,
+    // autoplay: true,
+    margin: 30,
+    autoplayTimeout: 2000,
+    // nav: false,
+    // rtl: true,
+    navText: [
+      "<i class='fa-regular fa-angle-left'></i>",
+      "<i class='fa-regular fa-angle-right'></i>",
+    ],
+    // rtl: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+        dots: false,
+        dotsEach: 3,
+      },
+      375: {
+        items: 2,
+        nav: true,
+        dots: false,
+        dotsEach: 2,
+      },
+      768: {
+        items: 3,
+        nav: true,
+        dots: false,
+      },
+      992: {
+        items: 4,
+        nav: true,
+        dots: false,
+      },
+      1400: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+    },
+  });
+  // testimonial carousel end
 
   // donation carousel start
   $(".donation-carousel").owlCarousel({
@@ -60,33 +104,86 @@ $(document).ready(function () {
   });
   // donation carousel end
 
-  // Hero slider start
-  if ($(".hero-slick").length) {
-    $(".hero-slick").slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      dots: false,
-      focusOnSelect: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      // rtl: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 3,
-          },
-        },
-        {
-          breakpoint: 426,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-      ],
-    });
-  }
-  // Hero slider end
+  // hero2 carousel start
+  $(".hero2-carousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    margin: 0,
+    autoplayTimeout: 2000,
+    // nav: false,
+    // rtl: true,
+    navText: [
+      "<i class='fa-regular fa-angle-left'></i>",
+      "<i class='fa-regular fa-angle-right'></i>",
+    ],
+    // rtl: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+        dotsEach: 3,
+      },
+      375: {
+        items: 1,
+        nav: false,
+        dots: true,
+        dotsEach: 2,
+      },
+      768: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+      992: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+    },
+  });
+  // hero2 carousel end
+
+  // case carousel start
+  $(".cause-carousel").owlCarousel({
+    loop: true,
+    // autoplay: true,
+    margin: 30,
+    autoplayTimeout: 2000,
+    // nav: false,
+    // rtl: true,
+    navText: [
+      "<i class='fa-regular fa-angle-left'></i>",
+      "<i class='fa-regular fa-angle-right'></i>",
+    ],
+    // rtl: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+        dotsEach: 3,
+      },
+      375: {
+        items: 1,
+        nav: false,
+        dots: true,
+        dotsEach: 2,
+      },
+      768: {
+        items: 1,
+        nav: false,
+        dots: true,
+      },
+      992: {
+        items: 2,
+        nav: true,
+        dots: false,
+      },
+    },
+  });
+  // case carousel end
+
 
   // cmn select2 start
   $(".cmn-select2").select2();
